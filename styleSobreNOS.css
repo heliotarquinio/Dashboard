@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --color-primary: #7380ec;
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-info-light: #dce1eb;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-primary-variant: #111e88;
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+
+  --card-border-radius: 1rem;
+  --border-radius-1: 0.5rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+
+  --box-shadow: 0 0.8rem 1.5rem var(--color-light);
+}
+
+/* Tema escuro */
+body.dark-theme-variables {
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-background);
+  color: var(--color-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 14rem auto 23rem;
+  gap: 1.8rem;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* ------ ESTILO DO MAIN SOBRE ------ */
+main {
+  padding: 2rem 1rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.sobre-section {
+  background: var(--color-white);
+  padding: 2rem;
+  border-radius: var(--card-border-radius);
+  margin-bottom: 1.8rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.sobre-section h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+  border-left: 4px solid var(--color-primary);
+  padding-left: 0.8rem;
+}
+
+.sobre-section p {
+  color: var(--color-dark-variant);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sobre-section a {
+  color: var(--color-primary);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sobre-section a:hover {
+  color: var(--color-primary-variant);
+}
+
+/* ---------- SIDEBAR ---------- */
+aside {
+  background: var(--color-white);
+  height: 100vh;
+  padding-top: 2rem;
+  box-shadow: var(--box-shadow);
+}
+
+aside .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+
+aside .logo h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-dark);
+}
+
+aside .logo .danger {
+  color: var(--color-primary);
+}
+
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+aside .sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-info-dark);
+  border-radius: var(--border-radius-1);
+  transition: all 0.3s ease;
+}
+
+aside .sidebar a.active,
+aside .sidebar a:hover {
+  background: var(--color-light);
+  color: var(--color-primary);
+}
+
+aside .sidebar a span {
+  font-size: 1.5rem;
+}
+
+/* ---------- PERFIL E TOPO ---------- */
+.right .top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.right .theme-toggler {
+  background: var(--color-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 4.2rem;
+  height: 1.6rem;
+  border-radius: var(--border-radius-1);
+  cursor: pointer;
+}
+
+.right .theme-toggler span {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .theme-toggler span.active {
+  background: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 7rem auto 23rem;
+  }
+
+  aside .logo h2,
+  aside .sidebar h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    position: fixed;
+    left: -100%;
+    background: var(--color-white);
+    width: 18rem;
+    height: 100%;
+    z-index: 100;
+    transition: all 0.4s ease;
+  }
+
+  main {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+}
+
+/* Tema claro - padrão */
+body {
+    background-color: #f6f6f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  aside {
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar a {
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  /* Tema escuro */
+  body.dark-theme {
+    background-color: #181a1e;
+    color: #f5f5f5;
+  }
+  
+  body.dark-theme aside {
+    background-color: #1f2125;
+  }
+  
+  body.dark-theme .sidebar a {
+    color: #ccc;
+  }
+  
+  body.dark-theme .sidebar a.active {
+    color: #fff;
+  }
+  
+  /* Ícones do tema */
+  .theme-toggler span {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+  
+  .theme-toggler span.active {
+    opacity: 1;
+    color: #f39c12;
+  }
+
+
+/* Caixa de texto padrão (tema claro) */
+.sobre-section {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    color: #333;
+  }
+  
+  /* Caixa de texto no tema escuro */
+  body.dark-theme .sobre-section {
+    background-color: #2a2d37;  /* tom escuro, mas não preto total */
+    color: #eee;
+    box-shadow: 0 2px 8px rgba(255 255 255 / 0.1);
+  }
+  

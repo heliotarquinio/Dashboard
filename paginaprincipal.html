@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estação Meteorológica IFRN</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+  <link rel="stylesheet" href="styleTelaPrincipal.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="./imagens/logo1.png" alt="Logo IFRN">
+          <h2>ESTAÇÃO <span class="danger">METEOROLÓGICA</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-outlined">close</span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="#" class="active">
+          <span class="material-icons-outlined">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">info</span>
+          <h3>Sobre nós</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">article</span>
+          <h3>Relatórios</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">auto_graph</span>
+          <h3>Análise dos Dados</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">mail_outline</span>
+          <h3>Mensagens</h3>
+          <span class="message-count">39</span>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">settings</span>
+          <h3>Configurações</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">grid_view</span>
+          <h3>Opção1++</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">grid_view</span>
+          <h3>Opção2++</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">grid_view</span>
+          <h3>Opção3++</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Dashboard</h1>
+
+      <div class="date">
+        <input type="date">
+      </div>
+
+      <div class="insights">
+
+        <!-- Temperatura -->
+        <div class="insight temperatura">
+          <span class="material-icons-outlined">cloud</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Temperatura</h3>
+              <h1>34°C</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="number"><p>81%</p></div>
+            </div>
+          </div>
+          <small class="text-muted">Últimas 24 horas</small>
+        </div>
+
+        <!-- Umidade -->
+        <div class="insight umidade">
+          <span class="material-icons-outlined">water_drop</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Umidade</h3>
+              <h1>70%</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="number"><p>70%</p></div>
+            </div>
+          </div>
+          <small class="text-muted">Últimas 24 horas</small>
+        </div>
+
+        <!-- Vento -->
+        <div class="insight vento">
+          <span class="material-icons-outlined">air</span>
+          <div class="middle">
+            <div class="left">
+              <h3>Vento</h3>
+              <h1>18 km/h</h1>
+            </div>
+            <div class="progress">
+              <svg>
+                <circle cx="38" cy="38" r="36"></circle>
+              </svg>
+              <div class="number"><p>50%</p></div>
+            </div>
+          </div>
+          <small class="text-muted">Últimas 24 horas</small>
+        </div>
+
+      </div>
+
+      <div class="recent-orders">
+        <h2>Dados da API</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Temperatura</th>
+              <th>Umidade</th>
+              <th>Veloc. do Vento</th>
+              <th>Pressão</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <!-- Repita com os valores corrigidos abaixo -->
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+            <tr>
+              <td>29/06/2025</td>
+              <td>35°C</td>
+              <td>69%</td>
+              <td>35km/h</td>
+              <td>1013</td>
+              <td class="primary">Detalhes</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#">Mostrar Tudo</a>
+      </div>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-outlined">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-outlined active">light_mode</span>
+          <span class="material-icons-outlined">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Olá, <b>Hélio</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="./imagens/profile-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="recent-updates">
+        <h2>Atualizações de Dados</h2>
+        <div class="updates">
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./imagens/profile-2.jpg" alt="">
+            </div>
+            <div class="message">
+              <p><b>Riedson Gabriel</b> fez uma atualização no campo de configurações</p>
+              <small class="text-muted">5 minutos atrás</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./imagens/profile-3.jpg" alt="">
+            </div>
+            <div class="message">
+              <p><b>Samuel</b> fez uma atualização nos dados da estação meteorológica de Pau dos Ferros</p>
+              <small class="text-muted">10 horas atrás</small>
+            </div>
+          </div>
+          <div class="update">
+            <div class="profile-photo">
+              <img src="./imagens/profile-1.jpg" alt="">
+            </div>
+            <div class="message">
+              <p><b>Hélio Jorge</b> fez uma atualização na tabela da API</p>
+              <small class="text-muted">15 horas atrás</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- fim container -->
+
+  <script src="index.js"></script>
+</body>
+</html>

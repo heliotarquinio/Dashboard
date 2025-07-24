@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Estação Meteorológica IFRN</title>
+  <link rel="stylesheet" href="styleSobreNOS.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="top">
+        <div class="logo">
+          <img src="./imagens/logo1.png" alt="Logo IFRN">
+          <h2>ESTAÇÃO <span class="danger">METEOROLÓGICA</span></h2>
+        </div>
+        <div class="close" id="close-btn">
+          <span class="material-icons-outlined">close</span>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <a href="paginaprincipal.html">
+          <span class="material-icons-outlined">grid_view</span>
+          <h3>Dashboard</h3>
+        </a>
+        <a href="sobre.html" class="active">
+          <span class="material-icons-outlined">info</span>
+          <h3>Sobre nós</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">article</span>
+          <h3>Relatórios</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">auto_graph</span>
+          <h3>Análise dos Dados</h3>
+        </a>
+        <a href="#">
+          <span class="material-icons-outlined">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+    </aside>
+
+    <main>
+      <h1>Sobre Nós</h1>
+
+      <section class="sobre-section">
+        <h2>Quem Somos?</h2>
+        <p>Somos uma equipe do IFRN – Campus Apodi dedicada ao desenvolvimento de soluções tecnológicas para a agricultura. Nosso projeto é a criação de uma plataforma para disponibilizar, de forma online e acessível, os dados coletados pela estação meteorológica implantada desde 2018 no campus.</p>
+      </section>
+
+      <section class="sobre-section">
+        <h2>Nossa Equipe</h2>
+        <p>Somos alunos do IFRN – Campus Apodi, das áreas de programação e automação, dedicados ao desenvolvimento de soluções práticas que unem tecnologia e inovação. Trabalhamos de forma colaborativa para transformar os dados da estação meteorológica em informações acessíveis e úteis para a comunidade agrícola.</p>
+      </section>
+
+      <section class="sobre-section">
+        <h2>Objetivos do Projeto</h2>
+        <p>Nosso projeto tem como objetivo principal criar uma plataforma online que disponibilize, de forma clara e em tempo real, os dados da estação meteorológica do IFRN – Campus Apodi. Através dela, buscamos apoiar a gestão inteligente da irrigação, reduzir o desperdício de água e promover práticas agrícolas mais eficientes e sustentáveis.</p>
+      </section>
+
+      <section class="sobre-section">
+        <h2>Contato</h2>
+        <p>Quer saber mais ou colaborar com a nossa plataforma? Entre em contato pelo e-mail [seu_email@ifrn.edu.br] ou visite o IFRN – Campus Apodi. Estamos abertos a parcerias que contribuam para inovação e sustentabilidade na agricultura.</p>
+      </section>
+    </main>
+
+    <div class="right">
+      <div class="top">
+        <button id="menu-btn">
+          <span class="material-icons-outlined">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-icons-outlined active">light_mode</span>
+          <span class="material-icons-outlined">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p>Olá, <b>Hélio</b></p>
+            <small class="text-muted">Admin</small>
+          </div>
+          <div class="profile-photo">
+            <img src="./imagens/profile-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

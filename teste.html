@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Unidades: px, rem, vh</title>
+  <style>
+    html {
+      font-size: 16px; /* 1rem = 16px */
+    }
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .box {
+      margin: 1rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .px-box {
+      width: 300px;
+      height: 150px;
+      background-color: #3498db;
+    }
+
+    .rem-box {
+      width: 20rem;  /* 20 * 16px = 320px */
+      height: 10rem; /* 10 * 16px = 160px */
+      background-color: #2ecc71;
+    }
+
+    .vh-box {
+      width: 50vw;   /* 50% da largura da tela */
+      height: 30vh;  /* 30% da altura da tela */
+      background-color: #e74c3c;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Unidade: <code>px</code></h2>
+  <div class="box px-box">300px x 150px</div>
+
+  <h2>Unidade: <code>rem</code></h2>
+  <div class="box rem-box">20rem x 10rem</div>
+
+  <h2>Unidade: <code>vh</code></h2>
+  <div class="box vh-box">50vw x 30vh</div>
+
+</body>
+</html>

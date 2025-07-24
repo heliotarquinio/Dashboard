@@ -1,0 +1,74 @@
+[
+    {
+        "id": "1",
+        "temperatura (°c)": "31.2",
+        "umidade (%)": "60",
+        "data": "10 Jul, 2025",
+        "vento (km/h)": "12",
+        "pressão (hpa)": "1011"
+    },
+    {
+        "id": "2",
+        "temperatura (°c)": "28.4",
+        "umidade (%)": "68",
+        "data": "11 Jul, 2025",
+        "vento (km/h)": "14",
+        "pressão (hpa)": "1009"
+    },
+    {
+        "id": "3",
+        "temperatura (°c)": "26.9",
+        "umidade (%)": "73",
+        "data": "12 Jul, 2025",
+        "vento (km/h)": "9",
+        "pressão (hpa)": "1013"
+    },
+    {
+        "id": "4",
+        "temperatura (°c)": "30.7",
+        "umidade (%)": "65",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "11",
+        "pressão (hpa)": "1010"
+    },
+    {
+        "id": "5",
+        "temperatura (°c)": "29.3",
+        "umidade (%)": "70",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "10",
+        "pressão (hpa)": "1012"
+    },
+    {
+        "id": "6",
+        "temperatura (°c)": "27.1",
+        "umidade (%)": "66",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "15",
+        "pressão (hpa)": "1008"
+    },
+    {
+        "id": "7",
+        "temperatura (°c)": "25.8",
+        "umidade (%)": "75",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "8",
+        "pressão (hpa)": "1015"
+    },
+    {
+        "id": "8",
+        "temperatura (°c)": "32.0",
+        "umidade (%)": "58",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "13",
+        "pressão (hpa)": "1007"
+    },
+    {
+        "id": "9",
+        "temperatura (°c)": "24.5",
+        "umidade (%)": "80",
+        "data": "13 Jul, 2025",
+        "vento (km/h)": "7",
+        "pressão (hpa)": "1016"
+    }
+]
